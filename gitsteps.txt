@@ -1,0 +1,24 @@
+	
+0	找個空文件夾建立本地倉庫
+1	初始化倉庫：git init
+2	配置賬戶：
+	git config --global user.name xxx
+	git config --global user.email xxx
+3	本地和遠程倉庫同步
+	git remote add origin https://github.com/lvxiangrong/-.git（遠程倉庫地址）
+
+4	拉取遠程倉庫：
+	git remote -v
+	git pull origin master  從遠程倉庫拽取文件
+	
+	touch 123.py
+	vim 123.py
+5	將新的文件放入暫存區：git add 123.py
+
+6	查看暫存區狀態：git status        123.py 為綠色代表成功放入暫存區
+
+7	將暫存區代碼提交的本地倉庫：git commit -m "此處是提交說明"
+	
+8	將本地倉庫推送到遠程
+	git push  origin master
+	若沒有配置ssh-key, 可能會需要輸入github賬號密碼
